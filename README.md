@@ -21,6 +21,13 @@ pnpm dev
 3. Click into Body and press Enter once. The editor now holds two empty paragraphs.
 4. Click Save. The post is created.
 
+## Related states
+
+The same field also saves two other states that hold no text. Start each case with a new post:
+
+- Click into the empty Body, press Shift+Enter once, click Save. The stored body is one paragraph with only a `linebreak` node.
+- Click into the empty Body, type `/`, choose Heading 2, click Save. The stored body is one `h2` heading with no children.
+
 ## Local API
 
 ```sh
