@@ -4,8 +4,11 @@ Minimal reproduction on the blank template, Payload 3.91.0. The `posts` collecti
 
 ## Run
 
+Tested with Node 22.23.4 and pnpm 10.34.7. Payload needs a running MongoDB.
+
 ```sh
-cp .env.example .env   # set DATABASE_URL and PAYLOAD_SECRET
+cp .env.example .env     # set DATABASE_URL and PAYLOAD_SECRET
+docker compose up -d mongo   # MongoDB on port 27017, as in the example DATABASE_URL
 pnpm install
 pnpm generate:importmap
 pnpm dev
